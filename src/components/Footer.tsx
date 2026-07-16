@@ -1,4 +1,5 @@
-import { Building2, Facebook, Twitter, Linkedin, Youtube, ArrowRight } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Youtube, ArrowRight } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const links = {
   Company: ['About Us', 'Leadership', 'Careers', 'CSR Initiatives', 'Investor Relations'],
@@ -19,43 +20,40 @@ export default function Footer() {
     <footer className="bg-gray-950 text-gray-400">
       <div className="border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+          {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-amber-600 rounded flex items-center justify-center">
-                <Building2 className="w-6 h-6 text-white" />
-              </div>
+              <img src={logo} alt="Skandapurvaja Buildtech" className="h-12 w-auto" />
               <div>
                 <p className="font-bold text-white text-sm leading-tight">SKANDAPURVAJA</p>
-                <p className="text-amber-500 text-xs">Build Tech Pvt. Ltd.</p>
+                <p className="text-xs" style={{ color: '#F5B800' }}>Buildtech Pvt. Ltd.</p>
               </div>
             </div>
-            <p className="text-sm leading-relaxed mb-6">
-              Building India's future with precision, passion, and purpose. Your trusted civil construction partner since 2000.
+            <p className="text-sm leading-relaxed mb-3">
+              Building on a legacy of trust, reliability & performance. Evolved from Ganapa Construction Company into Skandapurvaja Buildtech Private Limited in April 2025.
+            </p>
+            <p className="text-xs text-gray-600 mb-6">
+              📍 No. 2B, Timmareddy Layout, Murugesh Palya, Bangalore — 560017
             </p>
             <div className="flex gap-3">
-              {socials.map(({ icon: Icon, href }) => (
-                <a
-                  key={Icon.displayName}
-                  href={href}
-                  className="w-9 h-9 bg-white/5 hover:bg-amber-600 rounded-lg flex items-center justify-center transition-colors duration-200"
-                >
+              {socials.map(({ icon: Icon, href }, i) => (
+                <a key={i} href={href} className="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center transition-colors duration-200 hover:opacity-80" style={{}} onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.backgroundColor = '#1B3A6B'} onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'rgba(255,255,255,0.05)'}>
                   <Icon className="w-4 h-4 text-gray-400" />
                 </a>
               ))}
             </div>
           </div>
 
+          {/* Links */}
           {Object.entries(links).map(([category, items]) => (
             <div key={category}>
               <p className="text-white font-semibold text-sm mb-5 uppercase tracking-wider">{category}</p>
               <ul className="space-y-3">
                 {items.map((item) => (
                   <li key={item}>
-                    <a
-                      href="#"
-                      className="text-sm hover:text-amber-400 transition-colors flex items-center gap-1.5 group"
-                    >
-                      <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity text-amber-400" />
+                    <a href="#" className="text-sm transition-colors flex items-center gap-1.5 group hover:text-yellow-400">
+                      <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#F5B800' }} />
                       {item}
                     </a>
                   </li>
@@ -66,9 +64,16 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Certifications */}
       <div className="border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-wrap gap-6 items-center justify-center md:justify-start">
-          {['ISO 9001:2015', 'ISO 14001:2015', 'OHSAS 18001', 'RERA Registered', 'CREDAI Member'].map((cert) => (
+        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-wrap gap-4 items-center justify-center md:justify-start">
+          {[
+            'CIN: U41001KA2025PTC201312',
+            'GST: 29ABPCS9350J1ZH',
+            'MSME: UDYAM-KR-03-0563791',
+            'PAN: ABPCS9350J',
+            'ESIC: 50000843390001009',
+          ].map((cert) => (
             <span key={cert} className="text-xs text-gray-500 border border-white/10 px-3 py-1 rounded-full">
               {cert}
             </span>
@@ -76,9 +81,10 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Bottom */}
       <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-600">
-        <p>&copy; {new Date().getFullYear()} Skandapurvaja Build Tech Private Limited. All rights reserved.</p>
-        <p>CIN: U45200KA2000PTC026000 &nbsp;|&nbsp; GSTIN: 29XXXXX1234Z1</p>
+        <p>&copy; {new Date().getFullYear()} Skandapurvaja Buildtech Private Limited. All rights reserved.</p>
+        <p>Shop & Est. Reg: 5/HAL/S/0003/2025 &nbsp;|&nbsp; PT: 1103103944</p>
       </div>
     </footer>
   );

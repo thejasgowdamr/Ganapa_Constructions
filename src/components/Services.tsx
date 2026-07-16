@@ -44,7 +44,9 @@ export default function Services() {
     <section id="services" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-amber-600 font-semibold text-sm tracking-widest uppercase">What We Do</span>
+          <span className="font-semibold text-sm tracking-widest uppercase" style={{ color: '#F5B800' }}>
+            What We Do
+          </span>
           <h2 className="text-4xl font-bold text-gray-900 mt-3 mb-4">
             Comprehensive Construction Services
           </h2>
@@ -55,25 +57,18 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
           {services.map(({ icon: Icon, title, desc, image }) => (
-            <div
-              key={title}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100"
-            >
+            <div key={title} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
               <div className="relative h-48 overflow-hidden">
-                <img
-                  src={image}
-                  alt={title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-4 left-4 w-10 h-10 bg-amber-600 rounded-lg flex items-center justify-center">
+                <div className="absolute bottom-4 left-4 w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1B3A6B' }}>
                   <Icon className="w-5 h-5 text-white" />
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-gray-900 text-lg mb-2">{title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{desc}</p>
-                <button className="mt-4 text-amber-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+                <button className="mt-4 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all" style={{ color: '#1B3A6B' }}>
                   Learn More
                   <span>&rarr;</span>
                 </button>

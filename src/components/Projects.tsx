@@ -62,15 +62,17 @@ const projects = [
 
 export default function Projects() {
   const [active, setActive] = useState('All');
-
   const filtered = active === 'All' ? projects : projects.filter((p) => p.category === active);
 
   return (
     <section id="projects" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
+
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <span className="text-amber-600 font-semibold text-sm tracking-widest uppercase">Our Portfolio</span>
+            <span className="font-semibold text-sm tracking-widest uppercase" style={{ color: '#F5B800' }}>
+              Our Portfolio
+            </span>
             <h2 className="text-4xl font-bold text-gray-900 mt-2">Landmark Projects</h2>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -78,11 +80,12 @@ export default function Projects() {
               <button
                 key={cat}
                 onClick={() => setActive(cat)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                className="px-4 py-2 rounded-full text-sm font-medium transition-all"
+                style={
                   active === cat
-                    ? 'bg-amber-600 text-white shadow'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                }`}
+                    ? { backgroundColor: '#1B3A6B', color: '#fff' }
+                    : { backgroundColor: '#f3f4f6', color: '#4b5563' }
+                }
               >
                 {cat}
               </button>
@@ -92,23 +95,10 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
           {filtered.map((project) => (
-            <div
-              key={project.title}
-              className="group rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300"
-            >
+            <div key={project.title} className="group rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300">
               <div className="relative h-56 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <span
-                  className={`absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full ${
-                    project.tag === 'Completed'
-                      ? 'bg-green-600 text-white'
-                      : 'bg-amber-500 text-white'
-                  }`}
-                >
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span className={`absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full ${project.tag === 'Completed' ? 'bg-green-600 text-white' : 'bg-orange-500 text-white'}`}>
                   {project.tag}
                 </span>
                 <span className="absolute top-4 left-4 bg-black/50 text-white text-xs px-3 py-1 rounded-full">
@@ -119,11 +109,11 @@ export default function Projects() {
                 <h3 className="font-bold text-gray-900 text-base mb-3 leading-snug">{project.title}</h3>
                 <div className="flex items-center gap-4 text-xs text-gray-500">
                   <span className="flex items-center gap-1">
-                    <MapPin className="w-3.5 h-3.5 text-amber-500" />
+                    <MapPin className="w-3.5 h-3.5" style={{ color: '#F5B800' }} />
                     {project.location}
                   </span>
                   <span className="flex items-center gap-1">
-                    <Calendar className="w-3.5 h-3.5 text-amber-500" />
+                    <Calendar className="w-3.5 h-3.5" style={{ color: '#F5B800' }} />
                     {project.year}
                   </span>
                 </div>
@@ -134,13 +124,11 @@ export default function Projects() {
         </div>
 
         <div className="text-center mt-12">
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-semibold px-8 py-3 rounded-lg transition-all duration-200"
-          >
+          <a href="#contact" className="inline-flex items-center gap-2 text-white font-semibold px-8 py-3 rounded-lg transition-all hover:opacity-90" style={{ backgroundColor: '#1B3A6B' }}>
             Discuss Your Project
           </a>
         </div>
+
       </div>
     </section>
   );
