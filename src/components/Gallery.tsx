@@ -53,7 +53,7 @@ export default function Gallery() {
         </div>
 
         <div className="mt-12 text-center p-6 rounded-2xl border" style={{ backgroundColor: '#f0f4ff', borderColor: '#1B3A6B20' }}>
-          <p className="text-gray-600 text-sm">📸 <strong>More photos coming soon.</strong> Real project photos will be added shortly. Contact us at <a href="mailto:info@skandapurvajagroup.com" className="font-semibold" style={{ color: '#1B3A6B' }}>info@skandapurvajagroup.com</a></p>
+          <p className="text-gray-600 text-sm">📸 <strong>More photos coming soon.</strong> Real project photos will be added shortly. Contact us at <a href="mailto:info@skandapurvajagroup.com" className="font-semibold" style={{ color: '#1B3A6B' }}>info@ganapaconstructions.com</a></p>
         </div>
       </div>
 

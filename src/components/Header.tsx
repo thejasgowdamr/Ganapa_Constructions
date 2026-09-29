@@ -32,13 +32,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
         <a href="#home" className="flex items-center gap-3">
-          <img src={logo} alt="Skandapurvaja Buildtech" className="h-12 w-auto" />
+          <img src={logo} alt="Ganapa Construction Company" className="h-12 w-auto" />
           <div>
             <p className={`font-bold text-sm leading-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>
-              SKANDAPURVAJA
+              GANAPA CONSTRUCTIONS
             </p>
             <p className={`text-xs leading-tight transition-colors ${scrolled ? 'text-yellow-500' : 'text-yellow-300'}`}>
-              Buildtech Pvt. Ltd.
+              Engineers & Contractors
             </p>
           </div>
         </a>
@@ -51,9 +51,9 @@ export default function Header() {
           ))}
         </nav>
 
-        <a href="tel:+919945968200" className="hidden lg:flex items-center gap-2 text-white text-sm font-semibold px-5 py-2.5 rounded hover:opacity-90" style={{ backgroundColor: '#1B3A6B' }}>
+        <a href="tel:+919980730533" className="hidden lg:flex items-center gap-2 text-white text-sm font-semibold px-5 py-2.5 rounded hover:opacity-90" style={{ backgroundColor: '#1B3A6B' }}>
           <Phone className="w-4 h-4" />
-          +91 99459 68200
+          +91 99807 30533
         </a>
 
         <button className="lg:hidden" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
@@ -73,8 +73,8 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
-            <a href="tel:+919945968200" className="text-white text-sm font-semibold px-5 py-2.5 rounded text-center" style={{ backgroundColor: '#1B3A6B' }}>
-              +91 99459 68200
+            <a href="tel:+919980730533" className="text-white text-sm font-semibold px-5 py-2.5 rounded text-center" style={{ backgroundColor: '#1B3A6B' }}>
+              +91 99807 30533
             </a>
           </nav>
         </div>

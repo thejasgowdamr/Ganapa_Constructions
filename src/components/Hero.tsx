@@ -31,7 +31,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-xl">
-            Skandapurvaja Buildtech Private Limited — evolved from over a decade of success as Ganapa Construction Company. We deliver landmark residential, commercial, industrial, and infrastructure projects across Bangalore and beyond.
+            Ganapa Construction Company — over a decade of excellence delivering landmark residential, commercial, industrial, and infrastructure projects across Bangalore and beyond.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-10">
@@ -48,7 +48,7 @@ export default function Hero() {
               View Our Projects
               <ArrowRight className="w-4 h-4" />
             </a>
-            <a href="tel:+919945968200" className="inline-flex items-center gap-2 border border-white/40 hover:border-white/80 text-white font-semibold px-7 py-3.5 rounded transition-all duration-200 hover:bg-white/10">
+            <a href="tel:+919980730533" className="inline-flex items-center gap-2 border border-white/40 hover:border-white/80 text-white font-semibold px-7 py-3.5 rounded transition-all duration-200 hover:bg-white/10">
               <Phone className="w-4 h-4" />
               Call Us Now
             </a>
@@ -60,7 +60,7 @@ export default function Hero() {
           {[
             { value: '10+', label: 'Years of Experience' },
             { value: '100+', label: 'Projects Delivered' },
-            { value: '4', label: 'Expert Directors' },
+            { value: '2', label: 'Expert Partners' },
             { value: '98%', label: 'Client Satisfaction' },
           ].map((stat) => (
             <div key={stat.label} className="bg-black/40 backdrop-blur-sm px-6 py-5 text-center hover:bg-black/60 transition-colors">

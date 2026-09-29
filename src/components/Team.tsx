@@ -2,44 +2,44 @@ import { Linkedin, Mail, Phone } from 'lucide-react';
 
 const team = [
   {
+    name: 'Smt. D. Mamatha Reddy',
+    role: 'Founding Partner',
+    qualification: 'B.E (Civil)',
+    experience: '18+ Years',
+    desc: 'Founding partner with expertise in large-scale hospitality, industrial, and commercial project planning and delivery across Bangalore.',
+    avatar: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    phone: '+91 99807 30533',
+    email: 'ganapaconstructionblr@gmail.com',
+  },
+  {
+    name: 'Smt. D. Vinutha Reddy',
+    role: 'Founding Partner',
+    qualification: 'B.E (Civil)',
+    experience: '16+ Years',
+    desc: 'Founding partner with strong command over contracts, quantity surveying, and admin works across large-scale construction projects.',
+    avatar: 'https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    phone: '+91 99807 30533',
+    email: 'ganapaconstructionblr@gmail.com',
+  },
+  {
     name: 'Mr. Hariprasad K S',
-    role: 'Director',
+    role: 'Project Support',
     qualification: 'D.E.E',
     experience: '20+ Years',
     desc: 'Expert in construction, property development, and facility management across residential and commercial developments.',
     avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
     phone: '+91 99002 28200',
-    email: 'info@skandapurvajagroup.com',
+    email: 'ganapaconstructionblr@gmail.com',
   },
   {
-    name: 'Smt. D. Mamatha Reddy',
-    role: 'Director',
+    name: 'Mr. Abhishek Gowda',
+    role: 'Project Support',
     qualification: 'B.E (Civil)',
-    experience: '18+ Years',
-    desc: 'Founding partner with expertise in large-scale hospitality, industrial, and commercial project planning and delivery.',
-    avatar: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-    phone: '+91 99807 30533',
-    email: 'info@skandapurvajagroup.com',
-  },
-  {
-    name: 'Smt. Ashwini',
-    role: 'Director — Finance',
-    qualification: 'M.Com',
-    experience: '12+ Years',
-    desc: 'Deep expertise in financial planning, budgeting, accounting operations, and regulatory compliance management.',
-    avatar: 'https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-    phone: '+91 98862 28200',
-    email: 'info@skandapurvajagroup.com',
-  },
-  {
-    name: 'Mr. Basavaraj Goudar',
-    role: 'Managing Partner',
-    qualification: 'B.E (Civil)',
-    experience: '16+ Years',
-    desc: 'Founding partner at Manyatha Constructions. Expert in residential and commercial project planning and execution.',
-    avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-    phone: '+91 99723 46528',
-    email: 'info@skandapurvajagroup.com',
+    experience: '5+ Years',
+    desc: 'Handles on-site project coordination, client communication, and execution support across active construction sites.',
+    avatar: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    phone: '+91 99027 59324',
+    email: 'ganapaconstructionblr@gmail.com',
   },
   {
     name: 'Ravi Kumar',
@@ -47,9 +47,9 @@ const team = [
     qualification: 'B.E (Civil)',
     experience: '8+ Years',
     desc: 'Responsible for on-site execution, quality control, and coordination of civil works across all active project sites.',
-    avatar: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-    phone: '+91 99459 68200',
-    email: 'info@skandapurvajagroup.com',
+    avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    phone: '+91 99807 30533',
+    email: 'ganapaconstructionblr@gmail.com',
   },
   {
     name: 'Priya Sharma',
@@ -58,8 +58,8 @@ const team = [
     experience: '6+ Years',
     desc: 'Handles project cost estimation, BOQ preparation, material procurement planning, and billing for all projects.',
     avatar: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-    phone: '+91 99459 68200',
-    email: 'info@skandapurvajagroup.com',
+    phone: '+91 99807 30533',
+    email: 'ganapaconstructionblr@gmail.com',
   },
 ];
 
@@ -68,7 +68,6 @@ export default function Team() {
     <section id="team" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="font-semibold text-sm tracking-widest uppercase" style={{ color: '#F5B800' }}>
             Our People
@@ -81,30 +80,17 @@ export default function Team() {
           </p>
         </div>
 
-        {/* Team Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {team.map((member) => (
-            <div
-              key={member.name}
-              className="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500"
-            >
-              {/* Photo */}
+            <div key={member.name} className="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500">
               <div className="relative overflow-hidden h-72">
-                <img
-                  src={member.avatar}
-                  alt={member.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
+                <img src={member.avatar} alt={member.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                {/* Overlay on hover */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6"
                   style={{ background: 'linear-gradient(to top, rgba(27,58,107,0.95) 0%, rgba(27,58,107,0.6) 60%, transparent 100%)' }}>
-
                   <p className="text-white text-sm leading-relaxed mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
                     {member.desc}
                   </p>
-
-                  {/* Social Icons */}
                   <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
                     <a href="#" className="w-9 h-9 rounded-lg flex items-center justify-center transition-colors" style={{ backgroundColor: '#F5B800' }}>
                       <Linkedin className="w-4 h-4 text-white" />
@@ -118,13 +104,11 @@ export default function Team() {
                   </div>
                 </div>
 
-                {/* Experience Badge */}
                 <div className="absolute top-4 right-4 text-white text-xs font-bold px-3 py-1 rounded-full" style={{ backgroundColor: '#F5B800' }}>
                   {member.experience}
                 </div>
               </div>
 
-              {/* Info */}
               <div className="p-5 border-t border-gray-100">
                 <div className="flex items-start justify-between">
                   <div>
@@ -135,21 +119,18 @@ export default function Team() {
                     {member.qualification}
                   </span>
                 </div>
-
-                {/* Bottom accent line */}
                 <div className="mt-4 h-0.5 w-8 group-hover:w-full transition-all duration-500 rounded-full" style={{ backgroundColor: '#F5B800' }} />
               </div>
             </div>
           ))}
         </div>
 
-        {/* Bottom note */}
         <div className="mt-16 text-center p-8 rounded-2xl border" style={{ backgroundColor: '#f0f4ff', borderColor: '#1B3A6B20' }}>
           <p className="text-gray-600 text-sm">
             📸 <strong>Team photos will be updated soon.</strong> Placeholder images are used currently.
             Contact us at{' '}
-            <a href="mailto:info@skandapurvajagroup.com" className="font-semibold" style={{ color: '#1B3A6B' }}>
-              info@skandapurvajagroup.com
+            <a href="mailto:ganapaconstructionblr@gmail.com" className="font-semibold" style={{ color: '#1B3A6B' }}>
+              ganapaconstructionblr@gmail.com
             </a>
           </p>
         </div>

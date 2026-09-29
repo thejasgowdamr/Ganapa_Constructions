@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Send, CheckCircle } from 'lucide-react';
 
-const ACCESS_KEY = 'db52a783-0f2d-4f64-bce8-29fe0e842b74';
+const ACCESS_KEY = 'f894f206-0151-4bb5-85f5-1c6a555b151f';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -21,7 +21,7 @@ export default function Contact() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           access_key: ACCESS_KEY,
-          subject: `New Enquiry from ${form.name} — Skandapurvaja Website`,
+          subject: `New Enquiry from ${form.name} — Ganapa Construction Website`,
           name: form.name,
           email: form.email,
           phone: form.phone,
@@ -54,29 +54,30 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 font-medium uppercase tracking-wider">Registered Address</p>
-                  <p className="text-gray-700 text-sm mt-0.5">No. 2B, Timmareddy Layout, 2nd Cross, Murugesh Palya, NAL, Bangalore North — 560017</p>
+                  <p className="text-gray-700 text-sm mt-0.5">No. 135/7, 14th A Cross, Vyalikaval, Bengaluru — 560003</p>
                 </div>
               </div>
+
               <div className="flex gap-4">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#f0f4ff', border: '1px solid #1B3A6B20' }}>
                   <Phone className="w-5 h-5" style={{ color: '#1B3A6B' }} />
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 font-medium uppercase tracking-wider">Phone Numbers</p>
-                  <p className="text-gray-700 text-sm mt-0.5">+91 99459 68200 (Office)</p>
-                  <p className="text-gray-700 text-sm">+91 99002 28200 (Hariprasad K S)</p>
-                  <p className="text-gray-700 text-sm">+91 99807 30533 (D. Mamatha Reddy)</p>
-                  <p className="text-gray-700 text-sm">+91 99723 46528 (Basavaraj Goudar)</p>
+                  <p className="text-gray-700 text-sm mt-0.5">+91 99807 30533 (D. Mamatha Reddy)</p>
+                  {/* <p className="text-gray-700 text-sm">+91 99002 28200 (Hariprasad K S)</p> */}
+                  <p className="text-gray-700 text-sm">+91 99027 59324 (Abhishek K M)</p>
                 </div>
               </div>
+
               <div className="flex gap-4">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#f0f4ff', border: '1px solid #1B3A6B20' }}>
                   <Mail className="w-5 h-5" style={{ color: '#1B3A6B' }} />
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 font-medium uppercase tracking-wider">Email</p>
-                  <p className="text-gray-700 text-sm mt-0.5">info@skandapurvajagroup.com</p>
-                  <p className="text-gray-500 text-xs mt-0.5">www.skandapurvajagroup.com</p>
+                  <p className="text-gray-700 text-sm mt-0.5">info@ganapaconstructions.com</p>
+                  <p className="text-gray-500 text-xs mt-0.5">www.ganapaconstructions.com</p>
                 </div>
               </div>
             </div>
@@ -87,16 +88,6 @@ export default function Contact() {
                 <div className="flex justify-between"><span>Monday – Friday</span><span className="text-gray-700 font-medium">9:00 AM – 6:00 PM</span></div>
                 <div className="flex justify-between"><span>Saturday</span><span className="text-gray-700 font-medium">9:00 AM – 2:00 PM</span></div>
                 <div className="flex justify-between"><span>Sunday</span><span className="text-gray-400">Closed</span></div>
-              </div>
-            </div>
-
-            <div className="mt-6 p-5 rounded-xl border" style={{ backgroundColor: '#f0f4ff', borderColor: '#1B3A6B20' }}>
-              <p className="font-semibold text-sm mb-2" style={{ color: '#1B3A6B' }}>Bank Details</p>
-              <div className="text-xs text-gray-600 space-y-1">
-                <p>Bank: HDFC Bank — Current Account</p>
-                <p>Account No: 50200111249030</p>
-                <p>IFSC: HDFC0000075</p>
-                <p>Branch: Old Airport Road, Murugesh Palya</p>
               </div>
             </div>
           </div>

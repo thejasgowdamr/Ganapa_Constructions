@@ -10,14 +10,13 @@ const values = [
 const timeline = [
   { year: '2015', event: 'Founded as Ganapa Construction Company — began delivering residential and commercial projects across Bangalore.' },
   { year: '2020', event: '50+ Projects Delivered — earned trust of major clients including NTT Global Data Centers and KIMS Hospital.' },
-  { year: '2025', event: 'Incorporated as Skandapurvaja Buildtech Private Limited — new chapter of growth and innovation.' },
+  { year: '2025', event: 'Continuing our legacy — stronger, more experienced, and committed to delivering excellence across Karnataka.' },
 ];
 
 export default function About() {
   return (
     <section id="about" className="py-32 bg-gradient-to-b from-white via-blue-50/20 to-white overflow-hidden relative">
 
-      {/* Background blobs */}
       <div className="absolute top-20 right-0 w-96 h-96 rounded-full blur-3xl opacity-30" style={{ backgroundColor: '#1B3A6B15' }} />
       <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full blur-3xl opacity-30" style={{ backgroundColor: '#F5B80015' }} />
 
@@ -54,7 +53,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Stats Badge */}
             <div className="rounded-2xl p-6 text-white shadow-2xl" style={{ background: 'linear-gradient(135deg, #1B3A6B, #0f2244)' }}>
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
@@ -78,10 +76,10 @@ export default function About() {
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">From Vision to Reality</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                What began as <strong>Ganapa Construction Company</strong> has evolved into a powerhouse of construction excellence. Over a decade, we've built more than just structures — we've built lasting relationships and a reputation for uncompromising quality.
+                <strong>Ganapa Construction Company</strong> has built a powerhouse of construction excellence over a decade. We've built more than just structures — we've built lasting relationships and a reputation for uncompromising quality.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                In <strong>April 2025</strong>, we incorporated as <strong>Skandapurvaja Buildtech Private Limited</strong> — enabling us to scale operations, embrace modern governance, and tackle increasingly complex projects with greater efficiency.
+                Founded by <strong>Smt. D. Mamatha Reddy</strong> and <strong>Smt. D. Vinutha Reddy</strong>, both Civil Engineers with 16–18 years of experience, Ganapa Construction delivers landmark hospitality, industrial, and commercial projects across Bangalore.
               </p>
             </div>
 
@@ -110,10 +108,12 @@ export default function About() {
               <p className="font-bold text-sm uppercase tracking-widest mb-4" style={{ color: '#1B3A6B' }}>Statutory Credentials</p>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { label: 'CIN', value: 'U41001KA2025PTC201312' },
-                  { label: 'GST', value: '29ABPCS9350J1ZH' },
-                  { label: 'UDYAM', value: 'UDYAM-KR-03-0563791' },
-                  { label: 'PAN', value: 'ABPCS9350J' },
+                  { label: 'PAN', value: 'AAMFG8142P' },
+                  { label: 'GST', value: '29AAMFG8142P1ZK' },
+                  { label: 'UDYAM', value: 'UDYAM-KR-03-0130199' },
+                  { label: 'ESIC', value: '53000358850001009' },
+                  { label: 'PF', value: 'BG/BNG/80064' },
+                  { label: 'Address', value: 'No. 135/7, 14th A Cross, Vyalikaval, Bengaluru — 560003' },
                 ].map((cred) => (
                   <div key={cred.label} className="text-xs">
                     <p className="text-gray-400 font-semibold">{cred.label}</p>
@@ -149,7 +149,7 @@ export default function About() {
         <div className="pt-20 mt-20 border-t-2 border-gray-100">
           <div className="text-center mb-14">
             <h3 className="text-3xl font-bold text-gray-900">Our Journey</h3>
-            <p className="text-gray-500 mt-3">Milestones that shaped Skandapurvaja Buildtech</p>
+            <p className="text-gray-500 mt-3">Milestones that shaped Ganapa Construction Company</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {timeline.map((item, i) => (

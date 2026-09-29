@@ -24,21 +24,21 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <img src={logo} alt="Skandapurvaja Buildtech" className="h-12 w-auto" />
+              <img src={logo} alt="Ganapa Construction Company" className="h-12 w-auto" />
               <div>
-                <p className="font-bold text-white text-sm leading-tight">SKANDAPURVAJA</p>
-                <p className="text-xs" style={{ color: '#F5B800' }}>Buildtech Pvt. Ltd.</p>
+                <p className="font-bold text-white text-sm leading-tight">GANAPA CONSTRUCTION</p>
+                <p className="text-xs" style={{ color: '#F5B800' }}>Engineers & Contractors</p>
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-3">
-              Building on a legacy of trust, reliability & performance. Evolved from Ganapa Construction Company into Skandapurvaja Buildtech Private Limited in April 2025.
+              Building on a legacy of trust, reliability & performance. Over a decade of excellence delivering landmark construction projects across Bangalore and Karnataka.
             </p>
             <p className="text-xs text-gray-600 mb-6">
-              📍 No. 2B, Timmareddy Layout, Murugesh Palya, Bangalore — 560017
+              📍 No. 135/7, 14th A Cross, Vyalikaval, Bengaluru — 560003
             </p>
             <div className="flex gap-3">
               {socials.map(({ icon: Icon, href }, i) => (
-                <a key={i} href={href} className="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center transition-colors duration-200 hover:opacity-80" style={{}} onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.backgroundColor = '#1B3A6B'} onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'rgba(255,255,255,0.05)'}>
+                <a key={i} href={href} className="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center transition-colors duration-200 hover:opacity-80" onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.backgroundColor = '#1B3A6B'} onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'rgba(255,255,255,0.05)'}>
                   <Icon className="w-4 h-4 text-gray-400" />
                 </a>
               ))}
@@ -68,11 +68,11 @@ export default function Footer() {
       <div className="border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-wrap gap-4 items-center justify-center md:justify-start">
           {[
-            'CIN: U41001KA2025PTC201312',
-            'GST: 29ABPCS9350J1ZH',
-            'MSME: UDYAM-KR-03-0563791',
-            'PAN: ABPCS9350J',
-            'ESIC: 50000843390001009',
+            'PAN: AAMFG8142P',
+            'GST: 29AAMFG8142P1ZK',
+            'MSME: UDYAM-KR-03-0130199',
+            'ESIC: 53000358850001009',
+            'PF: BG/BNG/80064',
           ].map((cert) => (
             <span key={cert} className="text-xs text-gray-500 border border-white/10 px-3 py-1 rounded-full">
               {cert}
@@ -83,8 +83,8 @@ export default function Footer() {
 
       {/* Bottom */}
       <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-600">
-        <p>&copy; {new Date().getFullYear()} Skandapurvaja Buildtech Private Limited. All rights reserved.</p>
-        <p>Shop & Est. Reg: 5/HAL/S/0003/2025 &nbsp;|&nbsp; PT: 1103103944</p>
+        <p>&copy; {new Date().getFullYear()} Ganapa Construction Company. All rights reserved.</p>
+        <p>ganapaconstructionblr@gmail.com &nbsp;|&nbsp; +91 99807 30533</p>
       </div>
     </footer>
   );

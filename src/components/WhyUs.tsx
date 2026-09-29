@@ -9,7 +9,7 @@ const reasons = [
   {
     icon: BadgeCheck,
     title: 'Certified & Compliant',
-    desc: 'GST registered, MSME certified (UDYAM-KR-03-0563791), Shop & Establishment registered, PF & ESIC compliant — fully statutory.',
+    desc: 'GST registered, MSME certified (UDYAM-KR-03-0130199), Shop & Establishment registered, PF & ESIC compliant — fully statutory.',
   },
   {
     icon: Cpu,
@@ -24,7 +24,7 @@ const reasons = [
   {
     icon: MapPin,
     title: 'Bangalore Based',
-    desc: 'Headquartered at Murugesh Palya, Bangalore. Serving residential, commercial, industrial, and hospitality sectors across Karnataka.',
+    desc: 'Headquartered at Vyalikaval, Bangalore. Serving residential, commercial, industrial, and hospitality sectors across Karnataka.',
   },
   {
     icon: Leaf,
@@ -43,7 +43,7 @@ export default function WhyUs() {
             Why Choose Us
           </span>
           <h2 className="text-4xl font-bold text-white mt-3 mb-4">
-            The Skandapurvaja Difference
+            The Ganapa Difference
           </h2>
           <p className="text-gray-400 text-base leading-relaxed">
             What sets us apart is not just what we build — it's how we build. Our culture of accountability, integrity, and client focus drives everything we do.
@@ -75,11 +75,10 @@ export default function WhyUs() {
           ))}
         </div>
 
-        {/* CTA Banner */}
         <div className="mt-16 rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between gap-6" style={{ backgroundColor: '#1B3A6B' }}>
           <div>
             <h3 className="text-2xl font-bold text-white mb-2">Ready to start your project?</h3>
-            <p className="text-sm" style={{ color: '#F5B800' }}>Call us: +91 99459 68200 / +91 99002 28200 — Free site assessment and detailed estimate.</p>
+            <p className="text-sm" style={{ color: '#F5B800' }}>Call us: +91 99807 30533 / +91 99002 28200 — Free site assessment and detailed estimate.</p>
           </div>
           <a href="#contact" className="flex-shrink-0 font-bold px-8 py-3.5 rounded-xl transition-colors shadow-lg hover:opacity-90" style={{ backgroundColor: '#F5B800', color: '#1B3A6B' }}>Contact Us Now</a>
         </div>
